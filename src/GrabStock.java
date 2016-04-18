@@ -11,11 +11,10 @@ public class GrabStock {
 		
 		StockObserver observer2 = new StockObserver(stockGrabber);
 		
-		stockGrabber.setIbmPrice(12.12);
-		stockGrabber.setApplePrice(15.32);
-		
 		stockGrabber.unregister(observer1);
 		
+		stockGrabber.setIbmPrice(12.12);
+		stockGrabber.setApplePrice(15.32);
 		stockGrabber.setGooglePrice(30.23);
 		
 	}
